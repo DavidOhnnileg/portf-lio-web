@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - PetCenter Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slides">
+                <div class="slide active" style="background-image: url('img/slide1.jpg');">
+                    <div class="hero-conteudo">
+                        <h1>Bem-vindo ao PetCenter Digital</h1>
+                        <p>O cuidado e a alegria que seu pet merece, perto de você em Aparecida de Goiânia!</p>
+                        <a href="produtos.html" class="btn-cta">Explore Nossos Produtos</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/slide2.jpg');">
+                    <div class="hero-conteudo">
+                        <h1>Tudo para o seu Pet</h1>
+                        <p>Rações premium, acessórios, brinquedos e muito mais com a qualidade que você confia.</p>
+                        <a href="produtos.html" class="btn-cta">Conheça Nossos Produtos</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/slide3.jpg');">
+                    <div class="hero-conteudo">
+                        <h1>Saúde e Bem-Estar em Primeiro Lugar</h1>
+                        <p>Nossos serviços de Banho & Tosa e Clínica Veterinária com profissionais qualificados.</p>
+                        <a href="servicos.html" class="btn-cta">Agende um Serviço</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot " onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="nossa-loja">
+            <div class="class conteiner">
+                <h2>Nossa Loja Física</h2>
+                <div class="loja-conteudo">
+                    <img src="img/unnamed.png" alt="Logo da PetCenter Digital"
+                        class="imagem-loja">
+                    <div class="texto-loja">
+                        <p>A PetCenter Digital é o seu ponto de encontro para tudo que seu pet precisa em
+                            um só
+                            lugar! Explore e confira nossa ampla variedade de produtos e o carinho no
+                            atendimento.</p>
+                        <p><strong>Nosso Endereço:</strong> <a
+                                href="https://www.google.com/maps/search/?api=1&query=Rua da PetCenter, 123 - Centro, Aparecida de Goiânia - GO"
+                                target="_blank">Rua da PetCenter, 123 - Centro, Aparecida de Goiânia - GO</a></p>
+                        <a href="contato.html" class="btn-secundario">Ver Contato e Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos-destaque">
+            <div class="class conteiner">
+                <h2>Nossos Serviços Destaque</h2>
+                <div class="cards-servicos">
+                    <a href="servicos.html" class="card-link">
+                        <div class="card-servico">
+                            <img src="img/ícone banho e tosa.png" alt="Ícone de Banho e Tosa">
+                            <h3>Banho e Tosa</h3>
+                            <p>Cuidado completo para a higiene e beleza do seu pet.</p>
+                        </div>
+                    </a>
+                    <a href="servicos.html" class="card-link">
+                        <div class="card-servico">
+                            <img src="img/ícone clínica veterinária.png" alt="Ícone de Veterinário">
+                            <h3>Clínica Veterinária</h3>
+                            <p>Saúde e bem-estar garantidos com nossa equipe especializada.</p>
+                        </div>
+                    </a>
+                    <a href="servicos.html" class="card-link">
+                        <div class="card-servico">
+                            <img src="img/ícone pet shop.png" alt="Ícone de Pet Shop">
+                            <h3>Pet Shop Completo</h3>
+                            <p>Rações, brinquedos e acessórios com as melhores marcas.</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="servicos.html" class="btn-cta">Conheça Todos os Serviços</a>
+            </div>
+        </section>
+
+        <section class="produtos-destaque">
+            <div class="class conteiner">
+                <h2>Produtos para o seu Pet</h2>
+                <div class="cards-produtos">
+                    <a href="produtos.html" class="card-link">
+                        <div class="card-produto">
+                            <img src="img/Saco de ração Premium.jpg" alt="Saco de Ração">
+                            <h4>Ração Premium</h4>
+                            <p>A partir de R$ 99,90</p>
+                        </div>
+                    </a>
+                    <a href="produtos.html" class="card-link">
+                        <div class="card-produto">
+                            <img src="img/Brinquedo de borracha para cachorro.jpg" alt="Brinquedo de Cão">
+                            <h4>Brinquedos</h4>
+                            <p>A partir de R$ 19,90</p>
+                        </div>
+                    </a>
+                    <a href="produtos.html" class="card-link">
+                        <div class="card-produto">
+                            <img src="img/Remédio Anti Pulgas.jpg" alt="Remédio Anti Pulgas">
+                            <h4>Anti-pulgas</h4>
+                            <p>A partir de R$ 45,00</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="produtos.html" class="btn-cta">Ver Todos os Produtos</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-social">
+                <a href="http://googleusercontent.com/wa.me/5511987654321" target="_blank" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/petcenterdigital" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/petcenterdigital" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 PetCenter Digital. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="http://googleusercontent.com/wa.me/5511987654321" class="whatsapp-flutuante" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+<script src="script.js"></script>
+
+</html>
