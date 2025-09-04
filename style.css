@@ -1,6 +1,6 @@
-/* Estilos Gerais */
+
 body {
-    font-family: 'Poppins', sans-serif; /* Uma fonte mais moderna */
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
 }
 
-/* No seu arquivo style.css */
+
 body.page-produtos .secao-banner {
     background-image: url('img/kit-pet-cachorro-7-itens.jpg');
 }
@@ -17,11 +17,12 @@ body.page-servicos .secao-banner {
     background-image: url('img/um-cachorro-feliz\ -no-banho.jpg');
 }
 
-            /* Header e Navegação */
+           
+
 header {
     background-color: #006400;
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 nav ul {
@@ -30,27 +31,76 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 0;
-    display: block;
-    transition: color 0.3s;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
-    color: #aaffaaff;
+nav ul li a:hover {
+    background-color: #004d00;
+    border-radius: 5px;
 }
 
-            /* Botões CTA (Call to Action) */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #006400;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 99;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+           
 .btn-cta {
     background-color: #FFA500;
     color: white;
@@ -69,7 +119,7 @@ nav a:hover {
 }
 
 .btn-secundario {
-    background-color: #008000; /* Verde principal */
+    background-color: #008000;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -83,13 +133,13 @@ nav a:hover {
     background-color: #006400;
 }
 
-            /* Seção HERO SLIDER */
+           
 .hero-slider {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 650px; /* Mantém a altura para um visual consistente */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+    height: 650px;
+    box-sizing: border-box;
 }
 
 .slides {
@@ -107,18 +157,18 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     color: white;
-    position: absolute; /* Para sobrepor os slides */
+    position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 1s ease-in-out; /* Transição suave */
+    transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
     display: flex;
-    opacity: 1; /* Slide ativo visível */
+    opacity: 1;
 }
 
-.slide::before { /* Efeito de sobreposição escura */
+.slide::before {
     content: '';
     position: absolute;
     top: 0;
@@ -132,9 +182,9 @@ nav a:hover {
 .hero-conteudo {
     position: relative;
     z-index: 2;
-    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    max-width: 800px;
     padding: 0 20px;
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    margin: 0 auto;
 }
 
 .hero-conteudo h1 {
@@ -149,7 +199,7 @@ nav a:hover {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-            /* Navegação do Slider (pontos) */
+           
 .slider-nav {
     position: absolute;
     bottom: 20px;
@@ -170,10 +220,10 @@ nav a:hover {
 }
 
 .dot.active, .dot:hover {
-    background-color: #FFA500; /* Laranja da marca para destaque */
+    background-color: #FFA500;
 }
 
-            /* Media Queries para Slider */
+           
 @media (max-width: 768px) {
     .hero-slider {
         height: 400px;
@@ -186,15 +236,15 @@ nav a:hover {
     }
 }
 
-            /* Seções Gerais de Conteúdo */
+           
 main section {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #ffffff; /* Definindo um branco mais puro como padrão */
+    background-color: #ffffff;
 }
 
-main section:nth-child(even) { /* Cores alternadas para seções */
-    background-color: #eaf7ea; /* Verde claro para as seções pares */
+main section:nth-child(even) {
+    background-color: #eaf7ea;
 }
 
 h2 {
@@ -204,7 +254,7 @@ h2 {
     position: relative;
 }
 
-h2::after { /* Linha de destaque abaixo do título */
+h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -214,7 +264,7 @@ h2::after { /* Linha de destaque abaixo do título */
     border-radius: 2px;
 }
 
-            /* Seção Nossa Loja */
+           
 .nossa-loja .loja-conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +298,7 @@ h2::after { /* Linha de destaque abaixo do título */
     text-decoration: none;
 }
 
-            /* Seções de Destaque (Serviços e Produtos) */
+           
 .cards-servicos, .cards-produtos {
     display: flex;
     flex-wrap: wrap;
@@ -271,13 +321,13 @@ h2::after { /* Linha de destaque abaixo do título */
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 10%; /* Imagens de serviço redondas */
+    border-radius: 10%;
     margin-bottom: 15px;
     border: 3px solid rgba(0, 128, 0, 0.2);
 }
 
 .card-produto img {
-    border-radius: 5px; /* Imagens de produto quadradas */
+    border-radius: 5px;
     border: none;
 }
 
@@ -293,11 +343,11 @@ h2::after { /* Linha de destaque abaixo do título */
     font-weight: bold;
 }
 
-            /* Estilo para links dos cards */
+           
 .card-link {
-    display: block; /* Essencial para o link ocupar todo o espaço do card */
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    color: inherit; /* Mantém a cor do texto do card */
+    display: block;
+    text-decoration: none;
+    color: inherit;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -306,7 +356,7 @@ h2::after { /* Linha de destaque abaixo do título */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-              /* Footer */
+             
 footer {
     background-color: #333;
     color: white;
@@ -315,7 +365,7 @@ footer {
     font-size: 0.9rem;
 }
 
-            /* Media Queries para Responsividade (ajuste para telas menores) */
+           
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -339,12 +389,12 @@ footer {
 }
 
 
-                                  /* Estilos para a página de produtos.html */
+                                 
 
-            /* Estilos para a página de Catálogo de Produtos */
+           
 .catalogo {
     padding: 4rem 2rem;
-    background-color: #ffffff; /* Mantenha este ou escolha #ffffff / #eaf7ea */
+    background-color: #ffffff;
 }
 
 .catalogo h1 {
@@ -370,7 +420,7 @@ footer {
     margin-bottom: 40px;
 }
 
-            /* Estilos para a página de Lista de Produtos */
+           
 .lista-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -403,7 +453,7 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Para que o conteúdo ocupe o espaço disponível */
+    flex-grow: 1;
 }
 
 .produto-info h3 {
@@ -416,7 +466,7 @@ footer {
 .produto-descricao {
     font-size: 0.95rem;
     color: #666;
-    flex-grow: 1; /* Empurra o preço e o botão para baixo */
+    flex-grow: 1;
 }
 
 .produto-preco {
@@ -474,12 +524,12 @@ footer {
 }
 
 
-                                   /* Estilos para a página de Serviços */
+                                  
 
 
 .secao-servicos {
     padding: 4rem 2rem;
-    background-color: #f8f8f8; /* Mantenha este ou escolha #ffffff / #eaf7ea */
+    background-color: #f8f8f8;
 }
 
 .secao-servicos h1 {
@@ -525,7 +575,7 @@ footer {
 
 .servico-conteudo {
     display: flex;
-    flex-wrap: wrap; /* Para se ajustar a telas menores */
+    flex-wrap: wrap;
     align-items: center;
     padding: 30px;
     gap: 30px;
@@ -535,8 +585,8 @@ footer {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border: 3px solid rgba(0, 128, 0, 0.2); /* Borda verde suave (20% de opacidade) */
-    border-radius: 8px; /* Cantos levemente arredondados */
+    border: 3px solid rgba(0, 128, 0, 0.2);
+    border-radius: 8px;
     object-fit: cover;
 }
 
@@ -571,7 +621,7 @@ footer {
 }
 
 .servico-info li::before {
-    content: '✅'; /* Ícone de check para listas */
+    content: '✅';
     position: absolute;
     left: 0;
     color: #008000;
@@ -606,16 +656,16 @@ footer {
         text-align: center;
     }
     .servico-info li::before {
-        display: none; /* Esconde o ícone de check em mobile para melhor alinhamento */
+        display: none;
     }
     .servico-info li {
-        text-align: left; /* Mantém a lista alinhada à esquerda em mobile */
+        text-align: left;
         padding-left: 0;
     }
 }
 
 
-                                  /* Estilos para a Seção de Contato - Nova Versão */
+                                 
 
 .secao-contato {
     padding: 4rem 2rem;
@@ -625,20 +675,20 @@ footer {
 
 .contato-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Colunas para informações e formulário */
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
     max-width: 1200px;
     margin: 40px auto;
     text-align: left;
-    align-items: flex-start; /* Alinha os itens ao topo */
+    align-items: flex-start;
 }
 
 @media (max-width: 992px) {
     .contato-grid {
-        grid-template-columns: 1fr; /* Em telas menores, as colunas viram linha */
+        grid-template-columns: 1fr;
     }
     .info-contato-detalhes, .formulario-contato-wrapper {
-        padding: 25px; /* Ajusta o padding */
+        padding: 25px;
     }
 }
 
@@ -656,7 +706,7 @@ footer {
 }
 
 .info-contato-detalhes li {
-    display: flex; /* Para alinhar ícone e texto */
+    display: flex;
     align-items: center;
     margin-bottom: 30px;
     font-size: 1.1rem;
@@ -667,7 +717,7 @@ footer {
     font-size: 1.5rem;
     color: #008000;
     margin-right: 10px;
-    width: 120px; /* Garante alinhamento dos ícones */
+    width: 120px;
     text-align: center;
 }
 
@@ -731,7 +781,7 @@ footer {
 }
 
 .form-grupo textarea {
-    resize: vertical; /* Permite redimensionar verticalmente */
+    resize: vertical;
 }
 
 .formulario-contato-wrapper button {
@@ -775,8 +825,8 @@ footer {
 
 
 
-                                        /* estilo sobre.html */
-/* Estilos para a página "Sobre Nós" */
+                                       
+
 .secao-sobre {
     padding: 4rem 2rem;
     background-color: #f8f8f8;
@@ -897,7 +947,7 @@ footer {
 }
 
 
-                                     /* Estilos para o Rodapé e Redes Sociais */
+                                    
 footer {
     background-color: #222;
     color: white;
@@ -931,18 +981,18 @@ footer {
 }
 
 
-                                /* Estilo do botão flutuante do whatsapp */
+                               
 
 .whatsapp-flutuante {
-    position: fixed; /* Isso faz o botão flutuar na tela */
-    bottom: 30px; /* Distância do fundo da tela */
-    right: 30px; /* Distância da direita da tela */
-    z-index: 9999; /* Garante que o botão fique na frente de outros elementos */
-    background-color: #25d366; /* Cor oficial do WhatsApp */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    background-color: #25d366;
     color: white;
-    width: 60px; /* Tamanho do círculo */
-    height: 60px; /* Tamanho do círculo */
-    border-radius: 50%; /* Faz o botão ser redondo */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -952,10 +1002,10 @@ footer {
 }
 
 .whatsapp-flutuante:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
 }
 
-/* Oculta o botão flutuante em telas muito pequenas, se necessário */
+
 @media (max-width: 480px) {
     .whatsapp-flutuante {
         bottom: 15px;
@@ -967,23 +1017,23 @@ footer {
 }
 
 
-                      /* Container principal para centralizar o conteúdo em todas as seções */
+                     
 
 .container {
-    max-width: 1100px; /* Largura máxima para centralizar o conteúdo */
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px; /* Adiciona um espaçamento nas laterais */
+    padding: 0 20px;
 }
 
 
-                                    /* Seção do Banner */
+                                   
 
 .secao-banner {
     background-image: url('img/um-cachorro-feliz\ -no-banho.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Efeito de parallax */
-    height: 500px; /* Altura do banner */
+    background-attachment: fixed;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1000,7 +1050,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 

@@ -17,6 +17,9 @@
 <body>
     <header>
         <nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
@@ -63,8 +66,7 @@
             <div class="class conteiner">
                 <h2>Nossa Loja Física</h2>
                 <div class="loja-conteudo">
-                    <img src="img/unnamed.png" alt="Logo da PetCenter Digital"
-                        class="imagem-loja">
+                    <img src="img/unnamed.png" alt="Logo da PetCenter Digital" class="imagem-loja">
                     <div class="texto-loja">
                         <p>A PetCenter Digital é o seu ponto de encontro para tudo que seu pet precisa em
                             um só
@@ -161,6 +163,16 @@
     <a href="http://googleusercontent.com/wa.me/5511987654321" class="whatsapp-flutuante" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                navUl.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 <script src="script.js"></script>
 

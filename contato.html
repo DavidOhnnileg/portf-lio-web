@@ -53,10 +53,10 @@
 
                     <div class="redes-sociais-contato">
                         <h3>Siga-nos:</h3>
-                        <a href="https://www.instagram.com/petcenterdigital" target="_blank" class="social-icon-contato"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/petcenterdigital" target="_blank" class="social-icon-contato"><i
-                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/petcenterdigital" target="_blank"
+                            class="social-icon-contato"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/petcenterdigital" target="_blank"
+                            class="social-icon-contato"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
 
@@ -115,7 +115,16 @@
     <a href="http://googleusercontent.com/wa.me/5511987654321" class="whatsapp-flutuante" target="_blank"> <i
             class="fab fa-whatsapp"></i>
     </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
 
+            menuToggle.addEventListener('click', function () {
+                navUl.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
