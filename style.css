@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,7 +16,7 @@ body.page-servicos .secao-banner {
     background-image: url('img/um-cachorro-feliz\ -no-banho.jpg');
 }
 
-           
+
 
 header {
     background-color: #006400;
@@ -61,7 +60,7 @@ nav ul li a:hover {
     transform: translateY(-50%);
     z-index: 100;
 }
-          
+
 .btn-cta {
     background-color: #FFA500;
     color: white;
@@ -94,7 +93,7 @@ nav ul li a:hover {
     background-color: #006400;
 }
 
-           
+
 .hero-slider {
     position: relative;
     width: 100%;
@@ -160,7 +159,7 @@ nav ul li a:hover {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-           
+
 .slider-nav {
     position: absolute;
     bottom: 20px;
@@ -180,7 +179,8 @@ nav ul li a:hover {
     transition: background-color 0.6s ease;
 }
 
-.dot.active, .dot:hover {
+.dot.active,
+.dot:hover {
     background-color: #FFA500;
 }
 
@@ -211,7 +211,7 @@ h2::after {
     border-radius: 2px;
 }
 
-           
+
 .nossa-loja .loja-conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -245,8 +245,9 @@ h2::after {
     text-decoration: none;
 }
 
-           
-.cards-servicos, .cards-produtos {
+
+.cards-servicos,
+.cards-produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -254,7 +255,8 @@ h2::after {
     margin-top: 30px;
 }
 
-.card-servico, .card-produto {
+.card-servico,
+.card-produto {
     background-color: #eaf7ea;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -264,7 +266,8 @@ h2::after {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card-servico img, .card-produto img {
+.card-servico img,
+.card-produto img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -278,7 +281,8 @@ h2::after {
     border: none;
 }
 
-.card-servico h3, .card-produto h4 {
+.card-servico h3,
+.card-produto h4 {
     font-size: 1.4rem;
     color: #006400;
     margin-bottom: 10px;
@@ -290,7 +294,7 @@ h2::after {
     font-weight: bold;
 }
 
-           
+
 .card-link {
     display: block;
     text-decoration: none;
@@ -303,7 +307,7 @@ h2::after {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-             
+
 footer {
     background-color: #333;
     color: white;
@@ -312,7 +316,7 @@ footer {
     font-size: 0.9rem;
 }
 
-       
+
 .catalogo {
     padding: 4rem 2rem;
     background-color: #ffffff;
@@ -341,7 +345,7 @@ footer {
     margin-bottom: 40px;
 }
 
-           
+
 .lista-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -443,7 +447,7 @@ footer {
 .btn-detalhes:hover {
     background-color: #006400;
 }
-                                  
+
 
 .secao-servicos {
     padding: 4rem 2rem;
@@ -561,7 +565,7 @@ footer {
     background-color: #E69500;
     transform: translateY(-3px);
 }
-                                 
+
 
 .secao-contato {
     padding: 4rem 2rem;
@@ -580,7 +584,8 @@ footer {
 }
 
 
-.info-contato-detalhes, .formulario-contato-wrapper {
+.info-contato-detalhes,
+.formulario-contato-wrapper {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
@@ -710,7 +715,7 @@ footer {
     border-radius: 8px;
     max-width: 100%;
 }
-                                       
+
 
 .secao-sobre {
     padding: 4rem 2rem;
@@ -753,7 +758,8 @@ footer {
     min-width: 300px;
 }
 
-.texto-sobre h2, .nossos-valores h2 {
+.texto-sobre h2,
+.nossos-valores h2 {
     font-size: 2rem;
     color: #006400;
     margin-bottom: 15px;
@@ -819,7 +825,7 @@ footer {
     margin: 0;
 }
 
-                                    
+
 footer {
     background-color: #222;
     color: white;
@@ -851,7 +857,7 @@ footer {
 .whatsapp {
     color: #25d366;
 }
-                            
+
 
 .whatsapp-flutuante {
     position: fixed;
@@ -874,14 +880,14 @@ footer {
 .whatsapp-flutuante:hover {
     transform: scale(1.1);
 }
-                     
+
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
-                                 
+
 
 .secao-banner {
     background-image: url('img/um-cachorro-feliz\ -no-banho.jpg');
@@ -931,6 +937,7 @@ footer {
     body {
         font-size: 0.95rem;
     }
+
     .container {
         padding: 0 1rem;
     }
@@ -948,75 +955,152 @@ footer {
         z-index: 99;
         text-align: center;
     }
+
     nav ul.active {
         display: flex;
     }
+
     nav ul li {
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     nav ul li:last-child {
         border-bottom: none;
     }
+
     nav ul li a {
         padding: 1rem;
         display: block;
         width: 100%;
     }
+
     .menu-toggle {
         display: block;
     }
 
 
-    h2, .catalogo h1, .secao-servicos h1, .secao-sobre h1 {
+    h2,
+    .catalogo h1,
+    .secao-servicos h1,
+    .secao-sobre h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
+
     .hero-conteudo h1 {
         font-size: 2.2rem;
     }
+
     .hero-conteudo p {
         font-size: 1rem;
     }
 
 
-    main section, .catalogo, .secao-servicos, .secao-contato, .secao-sobre {
+    main section,
+    .catalogo,
+    .secao-servicos,
+    .secao-contato,
+    .secao-sobre {
         padding: 2rem 1rem;
     }
+
     .nossa-loja .loja-conteudo {
         flex-direction: column;
         text-align: center;
     }
+
     .nossa-loja .imagem-loja {
         max-width: 100%;
     }
-    .cards-servicos, .cards-produtos {
+
+
+    .cards-servicos,
+    .cards-produtos {
         flex-direction: column;
+
         gap: 20px;
+
+        align-items: center;
+
     }
-    .card-servico, .card-produto {
-        width: 100%;
+
+    .card-servico,
+    .card-produto,
+    .card-item {
+
+        width: 90%;
+
+        max-width: 350px;
+
+        margin: 0 auto 20px auto;
+
     }
-    .lista-produtos, .valores-grid {
+
+
+    .lista-produtos,
+    .lista-servicos,
+    .valores-grid {
         grid-template-columns: 1fr;
+
+        gap: 20px;
+
     }
+
+    .produto-item,
+    .servico-item,
+    .valor-item {
+        width: 90%;
+
+        max-width: 400px;
+
+        margin: 0 auto;
+
+    }
+
+    .servico-conteudo img {
+        max-width: 80%;
+
+    }
+
+
+    .card-servico h3,
+    .card-produto h4,
+    .produto-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-servico p,
+    .card-produto p,
+    .produto-item p {
+        font-size: 0.85rem;
+    }
+
     .produto-item img {
         height: auto;
     }
-    .servico-conteudo, .conteudo-sobre {
+
+    .servico-conteudo,
+    .conteudo-sobre {
         flex-direction: column;
         text-align: center;
     }
-    .servico-info h2, .servico-info p {
+
+    .servico-info h2,
+    .servico-info p {
         text-align: center;
     }
-    .servico-info li, .texto-sobre p {
+
+    .servico-info li,
+    .texto-sobre p {
         text-align: left;
     }
+
     .servico-info li::before {
         display: inline-block;
         margin-right: 5px;
     }
+
     .contato-grid {
         grid-template-columns: 1fr;
     }
