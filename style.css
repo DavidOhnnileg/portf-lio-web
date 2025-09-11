@@ -866,6 +866,7 @@ footer {
     z-index: 9999;
     background-color: #25d366;
     color: white;
+    text-decoration: none;
     width: 60px;
     height: 60px;
     border-radius: 50%;
