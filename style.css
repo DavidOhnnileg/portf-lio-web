@@ -966,6 +966,7 @@ footer {
 
     .menu-toggle {
         display: block;
+        right: 0px;
     }
 
     h2,
@@ -1058,19 +1059,20 @@ footer {
 
     .contato-grid {
         grid-template-columns: 1fr;
-        gap: 30px;         
-       
-        width: 100%;
-        margin: 0 auto;
-       
-        padding: 0 1.5rem;
+        gap: 30px;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .info-contato-detalhes,
     .formulario-contato-wrapper {
-        width: 100%;
-        padding: 0 10px;
-        margin: 0 auto;
+       display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     }
@@ -1159,8 +1161,10 @@ footer {
     }
 
     .nossos-valores {
-        width: 100%;
-        padding: 0 1rem;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .nossos-valores h2 {
