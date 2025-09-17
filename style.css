@@ -46,7 +46,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
 .menu-toggle {
     display: none;
     background: none;
@@ -92,7 +91,6 @@ nav ul li a:hover {
 .btn-secundario:hover {
     background-color: #006400;
 }
-
 
 .hero-slider {
     position: relative;
@@ -211,7 +209,6 @@ h2::after {
     border-radius: 2px;
 }
 
-
 .nossa-loja .loja-conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +241,6 @@ h2::after {
 .texto-loja a {
     text-decoration: none;
 }
-
 
 .cards-servicos,
 .cards-produtos {
@@ -294,7 +290,6 @@ h2::after {
     font-weight: bold;
 }
 
-
 .card-link {
     display: block;
     text-decoration: none;
@@ -315,7 +310,6 @@ footer {
     padding: 1.5rem;
     font-size: 0.9rem;
 }
-
 
 .catalogo {
     padding: 4rem 2rem;
@@ -344,7 +338,6 @@ footer {
     color: #555;
     margin-bottom: 40px;
 }
-
 
 .lista-produtos {
     display: grid;
@@ -447,7 +440,6 @@ footer {
 .btn-detalhes:hover {
     background-color: #006400;
 }
-
 
 .secao-servicos {
     padding: 4rem 2rem;
@@ -583,7 +575,6 @@ footer {
     align-items: flex-start;
 }
 
-
 .info-contato-detalhes,
 .formulario-contato-wrapper {
     background-color: #fff;
@@ -715,7 +706,6 @@ footer {
     border-radius: 8px;
     max-width: 100%;
 }
-
 
 .secao-sobre {
     padding: 4rem 2rem;
@@ -858,7 +848,6 @@ footer {
     color: #25d366;
 }
 
-
 .whatsapp-flutuante {
     position: fixed;
     bottom: 30px;
@@ -882,13 +871,11 @@ footer {
     transform: scale(1.1);
 }
 
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 
 .secao-banner {
     background-image: url('img/um-cachorro-feliz\ -no-banho.jpg');
@@ -934,6 +921,7 @@ footer {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+
 @media (max-width: 768px) {
 
     body {
@@ -943,7 +931,6 @@ footer {
     .container {
         padding: 0 1rem;
     }
-
 
     nav ul {
         display: none;
@@ -981,7 +968,6 @@ footer {
         display: block;
     }
 
-
     h2,
     .catalogo h1,
     .secao-servicos h1,
@@ -997,7 +983,6 @@ footer {
     .hero-conteudo p {
         font-size: 1rem;
     }
-
 
     main section,
     .catalogo,
@@ -1015,7 +1000,6 @@ footer {
     .nossa-loja .imagem-loja {
         max-width: 100%;
     }
-
 
     .cards-servicos,
     .cards-produtos {
@@ -1074,5 +1058,160 @@ footer {
 
     .contato-grid {
         grid-template-columns: 1fr;
+        gap: 30px;         
+       
+        width: 100%;
+        margin: 0 auto;
+       
+        padding: 0 1.5rem;
     }
-}
+
+    .info-contato-detalhes,
+    .formulario-contato-wrapper {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    }
+
+    .info-contato-detalhes h2,
+    .info-contato-detalhes ul,
+    .info-contato-detalhes li {
+        text-align: center;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contato-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contato-info {
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-contato-container, .formulario-contato {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .formulario-contato input[type="text"],
+    .formulario-contato input[type="email"],
+    .formulario-contato textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mapa-localizacao iframe {
+        width: 100%;
+        height: 300px;
+    }
+   
+    .formulario-contato input,
+    .formulario-contato textarea {
+        width: calc(100% - 20px);
+        max-width: 100%;
+    }
+   
+    .conteudo-sobre {
+        flex-direction: column;
+        text-align: center;    
+        align-items: center;   
+        margin-bottom: 2rem;   
+    }
+   
+    .texto-sobre {
+        width: 100%;            
+        max-width: 600px;       
+        margin: 0 auto;         
+        padding: 0 10px;        
+        text-align: center;     
+    }
+
+    .texto-sobre h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+   
+    .imagem-sobre {
+        width: 100%;            
+        max-width: 300px;       
+        margin: 1.5rem auto;    
+    }
+
+    .imagem-sobre img {
+        width: 100%;            
+        height: auto;
+    }
+
+    .nossos-valores {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .nossos-valores h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto; 
+        padding: 0;
+    }
+   
+    .valor-item {
+        width: 90%; 
+        max-width: 450px; 
+        margin: 0 auto 20px auto; 
+        padding: 2rem 1.5rem;
+        text-align: center; 
+    }
+   
+    .valor-item p {
+       
+        text-align: center;
+       
+        max-width: 90%; 
+        margin: 0.5rem auto 0 auto;
+    }
+
+    .valor-item i {
+        font-size: 3rem;          
+        margin-bottom: 1rem;
+    }
+
+    .valor-item h3 {
+        font-size: 1.4rem;        
+        margin-bottom: 0.8rem;
+    }
+
+    .valor-item p {
+        font-size: 0.9rem;        
+    }
+    
+    p {
+        line-height: 1.6;
+    }
+
+    .whatsapp-flutuante {
+        width: 50px;
+        height: 50px;
+    }
